@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+\newcommand{\lightgrey}{\rowcolor[gray]{.95}} % Lighter highlighting for duties
+
+%----------------------------------------------------------------------------------------
+% �FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+28 Westbank Avenue {\large\textperiodcentered} Emu Plains {\large\textperiodcentered} Australia 2750\\ % Your mailing address
+{\Large\Letter} t.atkinson1995@gmail.com \ {\Large\Telefon} 0478 646 781 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% �HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Thomas Atkinson} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+To gain experience and learn the skills required to become a productive member of the workforce.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{06/06/2011 --- 10/06/2011}\\
+\gray Employer & \textbf{Suncorp} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Business Technology}\\
+\lightgrey Duties & Setting up computers, Meetings, Finding flaws, glitches and bugs in software, Mapping the Internal Interfaces between their programs and computers. 
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{17/03/2012}\\
+\gray Employer & \textbf{Penrith City Centre} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Volunteer}\\
+\lightgrey Duties & Helped at the main stage by setting up stage, helping performers on and off stage. Cordoned off high street.
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{16/03/2013}\\
+\gray Employer & \textbf{Penrith City Centre} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Volunteer}\\
+\lightgrey Duties & Helped at the main stage by setting up stage, helping performers on and off stage. Helped sound desk by optimizing the equalization of the audio. Bumped off main stage inc. Rolling 50 meter 3 phase cable, disconnecting and packing away amplifiers, packing down lighting equipment such as par64's. Cordoned off high street.
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{06/01/2013 --- 13/01/2013}\\
+\gray Employer & \textbf{The Tin Soldier Penrith} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Contract Work}\\
+\lightgrey Duties & Painting, Sanding down walls and roof, Ripping up carpet, Cutting Carpet, Sugar Soaping Walls, Lifting heavy objects.
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{06/01/2013 --- 13/01/2013}\\
+\gray Employer & \textbf{The Tin Soldier Penrith} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Contract Work}\\
+\lightgrey Duties & Painting, Sanding down walls and roof, Ripping up carpet, Cutting Carpet, Sugar Soaping Walls, Lifting heavy objects.
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{25/05/2013 --- Current}\\
+\gray Employer & \textbf{Pizza Hut} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Delivery Driver}\\
+\lightgrey Duties & Customer Relations, Basic Mathematics, Driving, Verifying Products match order and fixing any discrepancies, Customer Identity Verification.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Open Source Contributions
+%----------------------------------------------------------------------------------------
+\section{Open Source Contributions}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Project & \textbf{Orweb}\\
+\gray Website & \textbf{https://guardianproject.info/apps/orweb/} \hfill\\
+\gray Additions & \textbf{Added a home button and set the application to preferably install on external storage}
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Project & \textbf{autoRealm}\\
+\gray Website & \textbf{http://sourceforge.net/projects/autorealm/} \hfill\\
+\gray Additions & \textbf{Rewrote Readme's to be eaier to read and include technical infomation required to build the project.}\\
+\gray		 & \textbf{ Updated support for building the project with the Code::Blocks IDE.}\\ 
+\gray		& \textbf{ Changed error messages to improve readability and clarity.}
+%& Extra information about degree
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{January 2006 --- Present}\\
+\gray Degree & \textbf{HSC}\\
+\gray School & \textbf{Nepean Creative and Performing Arts High School} \hfill\\
+%& Extra information about degree
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{January 2011 --- Present}\\
+\gray Degree & \textbf{VET Entertainment}\\
+\gray School & \textbf{Nepean Creative and Performing Arts High School} \hfill\\
+%& Extra information about degree
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Award & \textbf{Outstanding Attendance Semester 2 2013}\\
+\gray From & \textbf{Nepean Creative and Performing Arts High School} \hfill\\
+%& Extra information about degree
+\end{tabularx}
+
+%\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Award & \textbf{First Place Year 12, Physics}\\
+\gray From & \textbf{Nepean Creative and Performing Arts High School} \hfill\\
+%& Extra information about degree
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Name & \textbf{Linda Lucas}\\
+\gray Job & \textbf{Human Resources Manager, Suncorp}\\
+\gray Phone & \textbf{0418 216 027} \hfill \\
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Name & \textbf{Tracey Arnold}\\
+\gray Job & \textbf{Solicitor}\\
+\gray Phone & \textbf{0417 463 739} \hfill \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Qualifications & St Johns Crash Course, Responsible Service of Alcohol, Red Provisional Drivers License\\
+Computer Languages & Java, C, C++ \\
+Tools & Windows XP, Vista, 7, Microsoft Word, Tex Typesetting  Program, Emacs\\
+\end{tabular}
+
+%-------------------
+\end{center}
+\end{document}
