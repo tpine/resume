@@ -252,6 +252,9 @@
 % -----------%
 
 \section{Education}
+% Conditional for uncompleted degrees
+\newif\ifuncompleted{}
+% \uncompletedtrue
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
   \gray{} Period & \textbf{January 2006 --- December 2013}\\
@@ -267,15 +270,15 @@
   % & Extra information about degree
 \end{tabularx}
 
-%% Degree removed untill completed, on hold ad infitum
-
-%% \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-%%   \gray{} Period & \textbf{January 2013 --- June 2015}\\
-%%   \gray{} Degree & \textbf{Bachelors of Computer Science}\\
-%%   \gray{} School & \textbf{University of Western Sydney} \hfill\\
-%%   % & Extra information about degree
-%%   \lightgrey{} Comments & Currently Deferred
-%% \end{tabularx}
+\ifuncompleted{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray{} Period & \textbf{January 2013 --- June 2015}\\
+  \gray{} Degree & \textbf{Bachelors of Computer Science}\\
+  \gray{} School & \textbf{University of Western Sydney} \hfill\\
+  % & Extra information about degree
+  \lightgrey{} Comments & Currently Deferred
+\end{tabularx}
+\fi
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
   \gray{} Period & \textbf{January 2016 --- May 2017}\\
