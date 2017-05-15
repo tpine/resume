@@ -22,6 +22,27 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%--------------------------------------------------%
+%                                                  %
+% Changes to template                              %
+%                                                  %
+%--------------------------------------------------%
+%                                                  %
+% Font: EB Garamond                                %
+% Changed colors for alternating sections to allow %
+% easier parsing                                   %
+%                                                  %
+%--------------------------------------------------%
+%                                                  %
+% TODO                                             %
+%                                                  %
+%--------------------------------------------------%
+%                                                  %
+% Set consistent spacing between blocks            %
+% Turn each section into macros                    %
+%                                                  %
+%--------------------------------------------------%
+
 \documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
 
 \usepackage{scrpage2} % Provides headers and footers configuration
@@ -31,7 +52,7 @@
 \usepackage{fontspec} % Allows font customization
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{EB Garamond} % Main document font
+\usepackage{ebgaramond}
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
 
@@ -43,9 +64,9 @@
 \newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
 \newcommand{\lightgrey}{\rowcolor[gray]{.95}} % Lighter highlighting for duties
 
-%----------------------------------------------------------------------------------------
-% �FOOTER SECTION
-%----------------------------------------------------------------------------------------
+%----------------%
+% FOOTER SECTION %
+%----------------%
 
 \renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
 
@@ -53,34 +74,39 @@
 \addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
 
 28 Westbank Avenue {\large\textperiodcentered} Emu Plains {\large\textperiodcentered} Australia 2750\\ % Your mailing address
-{\Large\Letter} thomas.atkinson1995@gmail.com  \ {\Large\Telefon} (02) 4735 8663 % Your email address and phone number
+  {\Large\Telefon} (02) 4735 8663 OR 0499 474 109 \\% Your email address and phone number
+{\Large\Letter} thomas@pinegrove.io
 }
 
-%----------------------------------------------------------------------------------------
+%----------------%
+% Start Document %
+%----------------%
 
 \begin{document}
 
 \begin{center} % Center everything in the document
 
-%----------------------------------------------------------------------------------------
-% �HEADER SECTION
-%----------------------------------------------------------------------------------------
+%----------------%
+% HEADER SECTION %
+%----------------%
 
 {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Thomas Atkinson} % Your name at the top
 
 \vspace{1.5cm} % Extra whitespace after the large name at the top
 
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE
-%----------------------------------------------------------------------------------------
+%-----------%
+% OBJECTIVE %
+%-----------%
 
-\section{Objective}
+%% TODO: Rewrite or remove objective current ones horrible
 
-To gain experience and learn the skills required to become a productive member of the workforce.
+%% \section{Objective}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
+%% To gain experience and learn the skills required to become a productive member of the workforce.
+
+%-----------------%
+% WORK EXPERIENCE %
+%-----------------%
 
 \section{Work Experience}
 
@@ -127,6 +153,8 @@ To gain experience and learn the skills required to become a productive member o
 \lightgrey Duties & customer relations, driving, verifying products match order and fixing any discrepancies, customer identity verification.
 \end{tabularx}
 
+\vspace{2pt}
+
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 \gray Period & \textbf{01/01/2015 --- Current}\\
 \gray Employer & \textbf{Panthers Group} \hfill Sydney, Australia\\
@@ -134,22 +162,36 @@ To gain experience and learn the skills required to become a productive member o
 \lightgrey Duties & customer relations, Cleaning, Barwork, Verifying Age
 \end{tabularx}
 
+\vspace{2pt}
+
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-\gray Period & \textbf{28/08/2015 --- Current}\\
+\gray Period & \textbf{28/08/2015 --- 01/01/2016}\\
 \gray Employer & \textbf{Cabramatta High School} \hfill Sydney, Australia\\
 \gray Job Title & \textbf{General Assistant}\\
 \lightgrey Duties & Gardening, Cleaning, Work-site upkeep including fixing broken objects
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	Open Source Contributions
-%----------------------------------------------------------------------------------------
+\vspace{2pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{01/02/2016 --- 25/10/2016}\\
+\gray Employer & \textbf{National Tech} \hfill Sydney, Australia\\
+\gray Job Title & \textbf{Computer Technician}\\
+\lightgrey Duties & Administering Servers, Ensuring Backup Regime is working properly, Developing new strategies to ensure backups are run without issues on all servers, Diagnosing and fixing issues with users computers
+\end{tabularx}
+
+%---------------------------%
+% Open Source Contributions %
+%---------------------------%
+
 \section{Open Source Contributions}
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 \gray Project & \textbf{Orweb}\\
 \gray Website & \textbf{https://guardianproject.info/apps/orweb/} \hfill\\
 \lightgrey Additions & \textbf{Added a home button and set the application to preferably install on external storage}
 \end{tabularx}
+
+\vspace{2pt}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 \gray Project & \textbf{autoRealm}\\
@@ -160,11 +202,15 @@ To gain experience and learn the skills required to become a productive member o
 %& Extra information about degree
 \end{tabularx}
 
+\vspace{2pt}
+
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 \gray Project & \textbf{Pykemon}\\
 \gray Website & \textbf{https://github.com/CptnBrittish/pykemon} \hfill\\
 \lightgrey Additions & \textbf{Added API interface to get a dictionary list of all Pokemon}
 \end{tabularx}
+
+\vspace{2pt}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 \gray Project & \textbf{linksys-wrt1900ac-Fan-Control}\\
@@ -173,9 +219,9 @@ To gain experience and learn the skills required to become a productive member o
 \lightgrey Features & \textbf{Multi-threading, Temperature monitoring, Load Monitoring, Hardware control, timer control, Exponential increase and back off cure to lower bearing wear on fan}
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+%-----------%
+% EDUCATION %
+%-----------%
 
 \section{Education}
 
@@ -193,17 +239,26 @@ To gain experience and learn the skills required to become a productive member o
 %& Extra information about degree
 \end{tabularx}
 
+%% Degree removed untill completed, on hold ad infitum
+
+%% \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+%% \gray Period & \textbf{January 2013 --- June 2015}\\
+%% \gray Degree & \textbf{Bachelors of Computer Science}\\
+%% \gray School & \textbf{University of Western Sydney} \hfill\\
+%% %& Extra information about degree
+%% \lightgrey Comments & Currently Deferred
+%% \end{tabularx}
+
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-\gray Period & \textbf{January 2013 --- June 2015}\\
-\gray Degree & \textbf{Bachelors of Computer Science}\\
-\gray School & \textbf{University of Western Sydney} \hfill\\
+\gray Period & \textbf{January 2016 --- Current}\\
+\gray Degree & \textbf{IT Certificate III}\\
+\gray School & \textbf{AusCollege} \hfill\\
 %& Extra information about degree
-\lightgrey Comments & Currently Deferred
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
+%--------%
+% AWARDS %
+%--------%
 
 \section{Awards}
 
@@ -220,9 +275,10 @@ To gain experience and learn the skills required to become a productive member o
 \gray From & \textbf{Nepean Creative and Performing Arts High School} \hfill\\
 %& Extra information about degree
 \end{tabularx}
-%----------------------------------------------------------------------------------------
-%	References
-%----------------------------------------------------------------------------------------
+
+%------------%
+% References %
+%------------%
 
 \section{References}
 
@@ -238,22 +294,21 @@ To gain experience and learn the skills required to become a productive member o
 \gray Phone & \textbf{0417 463 739} \hfill \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
+%--------%
+% SKILLS %
+%--------%
 
 \section{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
   Qualifications & St Johns Crash Course, Responsible Service of Alcohol,\\
-  & Responsible Conduct of Gambling, Red Provisional Drivers License, \\
+  & Responsible Conduct of Gambling, Full Drivers License, \\
   & Working with Children\\
   Computer Languages & Java, C, C++ \\
-  Tools & Windows XP, Vista, 7, 8, Microsoft Word, Microsoft Excel,\\
-  & Microsoft Powerpoint, Tex Typesetting  Program, Emacs\\
+  Tools & Windows XP, Vista, 7, 8, 10, Microsoft Office Suite,\\
+  & Tex Typesetting Program, Emacs\\
 \end{tabular}
 
-%-------------------
 \end{center}
 \end{document}
 
