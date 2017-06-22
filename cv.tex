@@ -50,6 +50,7 @@
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage{tabularx,colortbl} % Advanced table configurations
 \usepackage{fontspec} % Allows font customization
+\usepackage{url}
 
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{ebgaramond}
@@ -204,9 +205,31 @@
 % ---------------------------%
 
 \section{Open Source Contributions}
+% Current Projects
+\newif\ifcurrentproject{}
+\currentprojecttrue{}
+
 % Past Projects
 \newif\ifpastproject{}
 % \pastprojecttrue{}
+
+\ifcurrentproject{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+  \gray{} Project & \textbf{StumpWM}\\
+  \gray{} Website & \textbf{https://github.com/stumpwm/stumpwm} \hfill\\
+  \gray{} Description & \textbf{A tiling window manager for X11 written in Common Lisp}\\
+  \lightgrey{} Contributions & \begin{itemize}
+  \item{} Removed Compiler Warnings
+  \item{} Fixed bugs preventing functions from correctly implementing documentation
+    \begin{itemize}
+    \item{} Fixed exec so that it calls the shell the user specifies instead of \path{\bin\sh}
+      \item{} Fixed :function type so that it signals a error when the supplied variable is not a function
+    \end{itemize}
+  \item{} Removed legacy code for supporting multiple Common Lisp implementations, cleaning up functions when possible or removing now unneeded abstractions
+    \item{} Allowed more modern lisp idioms to be used such as using keys to identify systems
+  \end{itemize}\\
+\end{tabularx}
+\fi
 
 \ifpastproject{}
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
