@@ -204,39 +204,64 @@
 % ---------------------------%
 
 \section{Open Source Contributions}
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+% Past Projects
+\newif\ifpastproject{}
+% \pastprojecttrue{}
+
+\ifpastproject{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
   \gray{} Project & \textbf{Orweb}\\
   \gray{} Website & \textbf{https://guardianproject.info/apps/orweb/} \hfill\\
-  \lightgrey{} Additions & \textbf{Added a home button and set the application to preferably install on external storage}
+  \lightgrey{} Contributions & \begin{itemize}
+  \item{} Added a home button
+  \item{} Set the application to preferably install on external storage
+    \end{itemize}
 \end{tabularx}
 
 \vspace{2pt}
+\fi
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\ifpastproject{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
   \gray{} Project & \textbf{autoRealm}\\
   \gray{} Website & \textbf{http://sourceforge.net/projects/autorealm/} \hfill\\
-  \lightgrey{} Additions & \textbf{Rewrote Readme's to be easier to read and include technical information required to build the project.}\\
-  \lightgrey{}		& \textbf{ Updated support for building the project with the Code::Blocks IDE.}\\ 
-  \lightgrey{}		& \textbf{ Changed error messages to improve readability and clarity.}
-  % & Extra information about degree
+  \lightgrey{} Contributions & \begin{itemize}
+    \item{} Rewrote Readme to be easier to read and include technical information required to build the project
+  \item{} Updated support for building the project with the Code::Blocks IDE
+  \item{} Changed error messages to improve readability and clarity
+  \end{itemize}
 \end{tabularx}
 
 \vspace{2pt}
+\fi
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\ifpastproject{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
   \gray{} Project & \textbf{Pykemon}\\
   \gray{} Website & \textbf{https://github.com/CptnBrittish/pykemon} \hfill\\
-  \lightgrey{} Additions & \textbf{Added API interface to get a dictionary list of all Pokemon}
+  \lightgrey{} Contributions & \begin{itemize}
+  \item{} Added API interface to get a dictionary list of all Pokemon
+    \end{itemize}
 \end{tabularx}
 
 \vspace{2pt}
+\fi
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\ifpastproject{}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
   \gray{} Project & \textbf{linksys-wrt1900ac-Fan-Control}\\
   \gray{} Website & \textbf{https://github.com/CptnBrittish/linksys-wrt1900ac-Fan-Control} \hfill\\
   \gray{} Description & \textbf{A open source fan control program for the Linksys wrt1900ac when running Openwrt}\\
-  \lightgrey{} Features & \textbf{Multi-threading, Temperature monitoring, Load Monitoring, Hardware control, timer control, Exponential increase and back off cure to lower bearing wear on fan}
+  \lightgrey{} Features & \begin{itemize}
+  \item{} Multi-threading
+  \item{} Temperature monitoring
+  \item{} Load Monitoring
+  \item{} Hardware control
+  \item{} Timer control
+  \item{} Exponential increase and back off curve for fan speed to lower bearing wear on fan
+  \end{itemize}
 \end{tabularx}
+\fi
 
 % -----------%
 % EDUCATION %
